@@ -1,0 +1,22 @@
+{
+  "tasks": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "deno run --allow-net --allow-env --allow-read server.ts",
+    "test": "deno test --allow-env --allow-read"
+  },
+  "imports": {
+    "react": "npm:react@^18.3.1",
+    "react-dom": "npm:react-dom@^18.3.1",
+    "react-dom/client": "npm:react-dom@^18.3.1/client",
+    "vite": "npm:vite@^5.4.10",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.3.3",
+    "@std/http/file-server": "jsr:@std/http@^1.0.10/file-server"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["deno.window", "dom", "dom.iterable"]
+  },
+  "nodeModulesDir": "auto"
+}
