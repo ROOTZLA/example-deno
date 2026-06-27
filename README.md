@@ -40,8 +40,8 @@ To run the production server locally exactly as DollarDeploy does:
 
 ```sh
 deno task build
-PORT=8080 HOSTNAME=127.0.0.1 NODE_ENV=production deno task start
-# -> http://127.0.0.1:8080
+PORT=3000 HOSTNAME=127.0.0.1 NODE_ENV=production deno task start
+# -> http://127.0.0.1:3000
 ```
 
 ## How DollarDeploy builds and runs it
